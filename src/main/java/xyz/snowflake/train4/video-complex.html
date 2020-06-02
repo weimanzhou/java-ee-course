@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>受控制的video</title>
+</head>
+<body>
+<div style="text-align:center">
+    <button onclick="playPause()">播放/暂停</button>
+    <button onclick="makeBig()">放大</button>
+    <button onclick="makeSmall()">缩小</button>
+    <button onclick="makeNormal()">普通</button>
+    <br>
+    <video id="video1" width="420" controls>
+        <source src="mov_bbb.mp4" type="video/mp4">
+        <source src="mov_bbb.ogg" type="video/ogg">
+        <source src="resource/StartMenu_Win10.mp4" type="video/mp4">
+
+        您的浏览器不支持 HTML5 video 标签。
+    </video>
+</div>
+<script>
+    let myVideo=document.getElementById("video1");
+    let normal = myVideo.width
+    function playPause() {
+        if (myVideo.paused)
+            myVideo.play();
+        else
+            myVideo.pause();
+    }
+
+    function makeBig(){
+        myVideo.width = myVideo.width +  50;
+    }
+
+    function makeSmall(){
+        myVideo.width = myVideo.width -  50;
+    }
+
+    function makeNormal(){
+        myVideo.width = normal;
+    }
+</script>
+</body>
+</html>

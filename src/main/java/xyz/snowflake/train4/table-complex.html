@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>复杂表格</title>
+    <style>
+        p {
+            background: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<p>边框宽度为 10px ，表格宽度为 250px</p>
+<table border="10" width="250">
+    <caption>定货单</caption>
+    <tr>
+        <th>苹果</th>
+        <th>香蕉</th>
+        <th>葡萄</th>
+    </tr>
+    <tr>
+        <td>200公斤</td>
+        <td>200公斤</td>
+        <td>100公斤</td>
+    </tr>
+</table>
+
+<br>
+<p>边框宽度为 1px ，表格宽度为 250px</p>
+
+<table border="1" width="250">
+    <caption>定货单</caption>
+    <tr>
+        <th>苹果</th>
+        <th>香蕉</th>
+        <th>葡萄</th>
+    </tr>
+    <tr>
+        <td>200公斤</td>
+        <td>200公斤</td>
+        <td>100公斤</td>
+    </tr>
+</table>
+
+<br>
+<p>边框宽度为 0px ，表格宽度为 250px</p>
+
+<table border="0" width="250">
+    <caption>定货单</caption>
+    <tr>
+        <th>苹果</th>
+        <th>香蕉</th>
+        <th>葡萄</th>
+    </tr>
+    <tr>
+        <td>200公斤</td>
+        <td>200公斤</td>
+        <td>100公斤</td>
+    </tr>
+</table>
+<p>边框宽度为 3px ，单元格空隙为 10px</p>
+
+<table border="3" cellspacing="10">
+    <caption>定货单</caption>
+    <tr>
+        <th>苹果</th>
+        <th>香蕉</th>
+        <th>葡萄</th>
+    </tr>
+    <tr>
+        <td>200公斤</td>
+        <td>200公斤</td>
+        <td>100公斤</td>
+    </tr>
+</table>
+<p>边框宽度为 3px ，单元格padding为 10px</p>
+
+<table border="3" cellpadding="5">
+    <caption>定货单</caption>
+    <tr>
+        <th>苹果</th>
+        <th>香蕉</th>
+        <th>葡萄</th>
+    </tr>
+    <tr>
+        <td>200公斤</td>
+        <td>200公斤</td>
+        <td>100公斤</td>
+    </tr>
+</table>
+<p>边框宽度为 1px ，表格宽度为 10px，并调整单元格对齐方式</p>
+
+<table border="1" width="200">
+    <tr>
+        <th>居左</th>
+        <th>居中</th>
+        <th>居右</th>
+    </tr>
+    <tr>
+        <td align="left">a</td>
+        <td align="center">b</td>
+        <td align="right">c</td>
+    </tr>
+</table>
+<p>边框宽度为 3px ，单元格空隙为 10px</p>
+
+<table border="1" width="250" height="100">
+    <tr>
+        <th>上齐</th>
+        <th>居中</th>
+        <th>下齐</th>
+        <th>基线</th>
+    </tr>
+    <tr>
+        <td valign="top">a</td>
+        <td valign="middle">b</td>
+        <td valign="bottom">c</td>
+        <td valign="baseline">d</td>
+    </tr>
+</table>
+</body>
+</html>

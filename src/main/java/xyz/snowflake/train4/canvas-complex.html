@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Image to use:</p>
+<img id="scream" src="resource/xiaohua.png" alt="The Scream" width="220">
+<p>Canvas:</p>
+<canvas id="myCanvas" width="250" height="300" style="border:1px solid #d3d3d3;"></canvas>
+</body>
+<script>
+    var c = document.getElementById("myCanvas");
+    console.log(c)
+    var ctx = c.getContext("2d");
+    var img = document.getElementById("scream");
+    console.log(img)
+    img.onload = function() {
+        // 等比例缩放图片
+        var scale = 1;
+        var tt = 1000; // 可以根据具体的要求去设定
+        if (this.width > tt || this.height > tt) {
+            if (this.width > this.height) {
+                scale = tt / this.width;
+            } else {
+                scale = tt / this.height;
+            }
+        }
+        ctx.width = this.width * scale;
+        ctx.height = this.height * scale; // 计算等比缩小后图片
+
+        ctx.drawImage(this, 0, 0, ctx.width, ctx.height);  // 加载图片
+    }
+</script>
+</html>

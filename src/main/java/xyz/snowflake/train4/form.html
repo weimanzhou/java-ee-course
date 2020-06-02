@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style rel="stylesheet">
+        form {
+            width: 600px;
+            margin: 0 auto;
+        }
+
+
+        label {
+            display: inline-block;
+            width: 100px;
+            text-align: right;
+            padding-right: 20px
+        }
+    </style>
+</head>
+<body>
+<div>
+    <form id="form" action="/">
+        <div>
+            <label for="blob-title">标题</label>
+            <input type="text" id="blob-title" placeholder="请输入博客标题">
+        </div>
+        <br>
+        <div>
+            <label for="blob-key-words">关键字</label>
+            <input type="text" id="blob-key-words" placeholder="输入关键字">
+        </div>
+        <br>
+        <div>
+            <label for="">布局</label>
+            <input type="radio" name="layout" value="布局一">布局一
+            <input type="radio" name="layout" value="布局二">布局二
+            <input type="radio" name="layout" value="布局三">布局三
+        </div>
+        <br>
+        <div>
+            <label for="">背景</label>
+            <select name="background" id="">
+                <option value="背景一">背景一</option>
+                <option value="背景二">背景二</option>
+                <option value="背景三">背景三</option>
+                <option value="背景四">背景四</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="">适合群体</label>
+            <input type="checkbox" value="学前班">学前班
+            <input type="checkbox" value="小学生">小学生
+            <input type="checkbox" value="中学生">中学生
+            <input type="checkbox" value="成年人">成年人
+        </div>
+        <br>
+        <div>
+            <label for="content">内容</label>
+            <textarea name="content" id="content" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <label for=""></label>
+        <button id="save" onclick="save(this)" onsubmit="javascript: return false">保存</button>
+        <button id="exit" onclick="exit(this)" onsubmit="javascript: return false">退出</button>
+        <button id="reset" onclick="reset(this)" onsubmit="javascript: return false">复位</button>
+    </form>
+</div>
+<script rel="script">
+    function save(obj) {
+        let form = document.getElementById("form");
+        console.log(form)
+        console.log()
+        return false;
+    }
+
+    function exit(obj) {
+
+    }
+
+    function reset(obj) {
+
+    }
+</script>
+</body>
+</html>

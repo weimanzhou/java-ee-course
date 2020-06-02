@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>First HTML</title>
+    <script type="text/javascript">
+        function fib(n) {
+            let s = 1;
+            for (let i = 2; i <= n; i++)
+                s *= i;
+            return s;
+        }
+    </script>
+</head>
+
+<body>
+<script type="text/javascript">
+    for (let n = 1; n <= 10; n++)
+        document.write(n + "!=" + fib(n) + "<br/>")
+</script>
+</body>
+</html>
